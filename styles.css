@@ -9,7 +9,8 @@ nav {
 
 a:active {
     background-color: white;
-    color: black;
+    color: black;+
+
 }
 a {
     border: 2px solid black;
@@ -21,8 +22,6 @@ a {
     
 
 }
-
-
 
 
 .section {
