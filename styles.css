@@ -6,13 +6,14 @@ nav {
     display: flex;
     justify-content: space-around;
     z-index: 3;
+    margin: 0 10em;
    
     
 }
 header {
     
     padding: .5em 0em;
-    border: 2px solid black;
+    
     display: flex;
     background: rgba(17, 22, 88, 0.253);
 }
@@ -23,17 +24,34 @@ a:active {
 }
  
 a:hover {
-    transform: scale(1.25);
+    transform: scale(1.15);
+    border: 2px solid black;
 }
 a {
     border: 1px solid black;
     border-radius: 50px;
-    padding: 20px;
+    padding: 5px;
     color: white;
     text-decoration: none;
     transition: transform 1s;
+    background: rgb(216, 226, 241);
 
 }
+.teamTitle .wordGreen {
+    font-size: 2em;
+}
+
+.teamTitle .wordBlue {
+    font-size: 2em;
+}
+.wordBlue:hover {
+    color:green;
+}
+
+.wordGreen:hover {
+    color:blue; 
+}
+
 .wordBlue {
     color:blue;
 }
@@ -42,35 +60,37 @@ a {
     color:green;
 }
 
-/* video {
-    height: 100vh;
-    width: 100%;
-} */
+
 
 .section {
     width: 100%;
     height: 100vh;
-    position: absolute;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    overflow: scroll;
+    display: block;
     z-index: -1;
     
 }
 
 .title {
     text-align: center;
-    font-size: 6rem;
+    font-size: 5rem;
+    border: 30px solid transparent;
+    border-radius: 45px;
     font-family: 'Josefin Sans', sans-serif;
-    background: rgba(255, 255, 255, 0.377);
+    background: rgb(216, 226, 241);
     padding: 20px;
     margin: 0 -3em;
     z-index: 1;
     opacity: .7;
     position: absolute;
-    top: 16%;
-    left: 45%;
+    top: 15%;
+    left: 50%;
+    /* border-image-width: auto;
+    border-image: url(images/cloud.jpg) 20% round; */
+}
+
+video {
+    width: 100%;
+    height: 100vh;
 }
 
 .video-container {
@@ -96,7 +116,7 @@ a {
 .content-boxes {
     
     z-index: 2;
-    margin: 1em;
+    margin: 0 10em 0 10em;
     background: rgba(7, 21, 41, 0.8);
     padding: 5px 20px;
     color: white;
@@ -115,7 +135,7 @@ a {
 
 footer {
     position: absolute;
-    bottom: -4%;
+   
     color: black;
     font-size: 20px;
     left: 50%;
