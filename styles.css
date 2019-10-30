@@ -155,13 +155,13 @@ a {
   }
   
   .text {
-    white-space: nowrap; 
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     overflow: hidden;
+    width: 9em;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     z-index: 1;
