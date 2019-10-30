@@ -7,17 +7,18 @@ nav {
     display: flex;
     justify-content: space-around;
     z-index: 3;
-    margin: 0 10em;
+    margin: 0;
    
     
 }
 header {
-    
+    position:static;
     padding: .5em 0em;
-    
-    display: flex;
-    background: rgba(17, 22, 88, 0.253);
+    display: block;
+    background: rgba(17, 22, 88,.6);
 }
+
+
 a:active {
     background-color: white;
     color: black;
@@ -63,13 +64,7 @@ a {
 
 
 
-.section {
-    width: 100%;
-    height: 100vh;
-    display: block;
-    z-index: -1;
-    
-}
+
 
 .title {
     text-align: center;
@@ -89,18 +84,18 @@ a {
     border-image: url(images/cloud.jpg) 20% round; */
 }
 
-video {
+#sunriseVideo {
     width: 100%;
-    height: 100vh;
 }
+    
 
 .video-container {
+    width: 100%;
     position: absolute;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    z-index: -1;
+    top: 12%;
+    margin: auto;
+    z-index: -10;
+
 }
 
 
@@ -128,7 +123,7 @@ video {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    padding: 2em;
+    padding: 0;
     width: 100%;
     justify-content: space-evenly;
 }
@@ -143,7 +138,7 @@ video {
   
   .avatarImage {
     display: block;
-    width: 100%;
+    width: 12em;
     z-index: 4;
   }
   
@@ -151,9 +146,9 @@ video {
   .overlay {
     display: block;
     position: absolute;
-    bottom: 17%;
-    height: 66%;
-    width: 42%;
+    bottom: 3em;
+    height: 12em;
+    width: 12em;
     z-index: 0;
     background-color: #008CBA;
     opacity: 1;
