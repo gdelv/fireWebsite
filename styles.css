@@ -1,26 +1,38 @@
+body {
+    margin: 0 auto;
+}
 nav {
-    position: absolute;
-    top: 3%;
-    left: 80%;
-    margin: 0 -2em;
+    width: 100%;
     display: flex;
+    justify-content: space-around;
     z-index: 3;
+   
     
 }
-
+header {
+    
+    padding: .5em 0em;
+    border: 2px solid black;
+    display: flex;
+    background: rgba(17, 22, 88, 0.253);
+}
 a:active {
     background-color: white;
     color: black;
 
 }
+ 
+a:hover {
+    transform: scale(1.25);
+}
 a {
-    border: 2px solid black;
+    border: 1px solid black;
+    border-radius: 50px;
     padding: 20px;
     color: white;
     text-decoration: none;
-    border-radius: 30px;
-    text-shadow: 1px 2px 8px #000;
-    box-shadow: 2px 3px black;
+    transition: transform 1s;
+
 }
 .wordBlue {
     color:blue;
@@ -30,16 +42,16 @@ a {
     color:green;
 }
 
-video {
+/* video {
     height: 100vh;
     width: 100%;
-}
+} */
 
 .section {
     width: 100%;
     height: 100vh;
     position: absolute;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     overflow: scroll;
@@ -94,6 +106,7 @@ video {
 
 .box-container {
     display: flex;
+    justify-content: space-around;
     position: absolute;
     top: 35em;
     z-index: 1;
