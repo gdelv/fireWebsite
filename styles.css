@@ -1,21 +1,30 @@
 body {
     margin: 0 auto;
-    display: inline-block;
+    position: relative;
+    /* width: 750px; */
 }
 nav {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-around;
-    z-index: 3;
+    z-index: 10;
     margin: 0;
    
     
 }
-header {
-    position:static;
-    padding: .5em 0em;
-    display: block;
+.homeHeader {
+    padding: .5em .5em;
+    display: flex;
     background: rgba(17, 22, 88,.6);
+    width: 18em;
+}
+
+.teamHeader {
+    padding: .5em .5em;
+    display: flex;
+    background: rgba(17, 22, 88,.6);
+    width: 18em;
+    
 }
 
 
@@ -68,43 +77,52 @@ a {
 
 .title {
     text-align: center;
-    font-size: 5rem;
-    border: 30px solid transparent;
-    border-radius: 45px;
+    font-size: 3em;
+    border: 2px solid darkblue;
+    border-radius: 33px;
     font-family: 'Josefin Sans', sans-serif;
     background: rgb(216, 226, 241);
-    padding: 20px;
-    margin: 0 -3em;
     z-index: 1;
     opacity: .7;
+    padding: .5em;
+    margin: 0 auto;
+    width: fit-content;
     position: absolute;
-    top: 15%;
-    left: 50%;
-    /* border-image-width: auto;
-    border-image: url(images/cloud.jpg) 20% round; */
+    top: .5em;
+    left: 18em;
+    display: inline-block;
+
+
 }
 
+ #windbladeVideo {
+
+    display: block;
+}
 #sunriseVideo {
-    width: 100%;
+
+    display: block;
 }
     
 
 .video-container {
-    width: 100%;
+    top: 0;
     position: absolute;
-    top: 12%;
-    margin: auto;
     z-index: -10;
-
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
 }
 
 
 .content-boxes {
-    
+    position: relative;
+    top: 10vh;
+
     z-index: 2;
-    margin: 0 10em 0 10em;
+    margin: 0 auto;
     background: rgba(7, 21, 41, 0.8);
-    padding: 5px 20px;
+    padding: 25px 20px;
     color: white;
     box-shadow: -5px 8px black;
     
@@ -112,11 +130,10 @@ a {
 
 .box-container {
     display: flex;
-    justify-content: space-around;
-    position: absolute;
-    top: 35em;
+    width: fit-content;
+    flex-direction: column;
     z-index: 1;
-
+    
 }
 
 .pictures-container {
