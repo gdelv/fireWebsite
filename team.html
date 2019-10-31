@@ -30,7 +30,13 @@
         </nav>
     </header>
     <main>
-            <h1 class="title"><span class="wordGreen">green</span><span class="wordBlue">ENERGY</span></h1>
+        <video id="sunriseVideo" autoplay loop muted>
+            <source src="videos/sunrise.mp4" type="video/mp4">
+        </video>
+        <button id="pauseBtnTeam" onclick="pauseVideoTeam()">Pause</button>
+
+        <h1 class="title"><span class="wordGreen">green</span><span class="wordBlue">ENERGY</span></h1>
+
         <div class="pictures-container">
             <div class="picture-container">
                 <img src="images/img_avatar.png" alt="Avatar 1" class="avatarImage">
@@ -97,11 +103,9 @@
 
            
                 
-            <div class="video-container">
-                <video id="sunriseVideo" autoplay loop muted>
-                    <source src="videos/sunrise.mp4" type="video/mp4">
-                </video>
-             </div>
+            
+
+             
             
         <script src="main.js"></script>
     </main>

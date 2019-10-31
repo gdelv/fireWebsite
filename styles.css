@@ -89,20 +89,7 @@ a {
 
 
 }
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-#myBtn:hover {
-    background: #ddd;
-    color: black;
-  }
+
 
 #windBladeVideo {
     position: fixed;
@@ -113,18 +100,14 @@ a {
     z-index: -10;
 }
 #sunriseVideo {
-    width: 100vw;
-    height: 100vh;
-    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
 }
     
-
-.video-container {
-    top: 0;
-    position: absolute;
-    z-index: -10;
-    margin: auto;
-}
 
 
 .content-boxes {
@@ -171,17 +154,6 @@ a {
     z-index: 4;
 }
   
-.overlay {
-    display: block;
-    position: absolute;
-    bottom: 3em;
-    height: 12em;
-    width: 12em;
-    z-index: 0;
-    background-color: #008CBA;
-    opacity: 1;
-}
-
 .sticky {
     position: fixed;
     top: 0;
@@ -193,6 +165,9 @@ a {
 
 #more {display: none;}
 #more1 {display: none;}  
+
+
+
 .text {
     color: white;
     font-size: 15px;
@@ -224,17 +199,7 @@ footer {
         top: 24%;
         left: 50%;
     }
-    .section {
-        width: 100%;
-        height: 100vh;
-    }
-   
-    .video-container {
-        position: absolute;
-        width: 100%;
-        top: 0em;
-        left: -18em;
-    }
+    
     .box-container {
         display: flex;
         flex-direction: column;
@@ -247,4 +212,91 @@ footer {
         left: 50%;
         z-index: 2;
     }
+}
+
+
+/* CSS animations */
+.container {
+    z-index: 3;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 35rem;
+    padding: 2rem
+
+}
+.bird {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+	background-size: auto 100%;
+	width: 88px;
+	height: 125px;
+	will-change: background-position;
+	
+	animation-name: fly-cycle;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+    animation-duration: 1s;
+	animation-delay: -0.5s;		
+    
+}
+
+.bird-container {
+	position: absolute;
+	top: 20%;
+	left: -10%;
+	transform: scale(0) translateX(-10vw);
+	will-change: transform;
+	
+	animation-name: fly-right-one;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	animation-delay: 0;
+    
+}
+    
+@keyframes fly-cycle {
+	
+	100% {
+		background-position: -900px 0;
+	}
+	
+}
+
+@keyframes fly-right-one {
+	
+	0% {
+		transform: scale(0.3) translateX(-10vw);
+	}
+	
+	10% {
+		transform: translateY(2vh) translateX(10vw) scale(0.4);
+	}
+	
+	20% {
+		transform: translateY(0vh) translateX(30vw) scale(0.5);
+	}
+	
+	30% {
+		transform: translateY(4vh) translateX(50vw) scale(0.6);
+	}
+	
+	40% {
+		transform: translateY(2vh) translateX(70vw) scale(0.6);
+	}
+	
+	50% {
+		transform: translateY(0vh) translateX(90vw) scale(0.6);
+	}
+	
+	60% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+	
+	100% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+	
 }

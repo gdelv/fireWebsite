@@ -94,3 +94,15 @@ function pauseVideo() {
     }
   }
 
+  let videoTeam = document.querySelector("#sunriseVideo");
+  let pauseBtnTeam = document.querySelector("#pauseBtnTeam");
+  function pauseVideoTeam() {
+      if (videoTeam.paused) {
+        videoTeam.play();
+        pauseBtnTeam.innerHTML = "Pause";
+      } else {
+        videoTeam.pause();
+        pauseBtnTeam.innerHTML = "Play";
+      }
+    }
+  
