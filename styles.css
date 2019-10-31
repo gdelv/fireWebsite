@@ -4,12 +4,11 @@ body {
     background:rgb(188, 215, 255);
     
 }
-/* header {
-    width: 18em;
-} */
+
 #homeHeader {
     padding: .5em .5em;
     display: flex;
+    flex-direction: column;
     background: rgba(17, 22, 88,.6);
     width: 26em;
 
@@ -89,8 +88,8 @@ a {
     margin: 0 auto;
     width: fit-content;
     position: absolute;
-    top: .5em;
-    left: 18em;
+    top: 0%;
+    right: 0%;
     display: inline-block;
 
 
@@ -129,7 +128,11 @@ a {
 
 .box-container {
     display: flex;
-    height: 350px;
+    height: 500px;
+    width: 90%;
+    position: fixed;
+    top: 30%;
+    left: 5%;
     flex-direction: column;
     z-index: 1;
     justify-content: space-between;
@@ -159,18 +162,6 @@ a {
     z-index: 4;
 }
   
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-.sticky + .content {
-    padding-top: 60px;
-}
-
-#more {display: none;}
-#more1 {display: none;}  
-
 
 
 .text {
@@ -187,11 +178,11 @@ a {
 }
 
 footer {
-    position: absolute;
-   
+    position: fixed;
     color: black;
     font-size: 20px;
     left: 50%;
+    bottom: 5%;
     margin: 1em 1em;
     
 }
@@ -224,12 +215,10 @@ footer {
 .container {
     z-index: 3;
     position: relative;
-    overflow: hidden;
     display: inline; 
     align-items: center;
     justify-content: center;
-    min-height: 35rem;
-    padding: 2rem
+    
 
 }
 .bird {
