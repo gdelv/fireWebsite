@@ -12,6 +12,12 @@ body {
     display: flex;
     background: rgba(17, 22, 88,.6);
     width: 26em;
+
+    animation-name: navLoad;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-duration: 1s;
+	animation-delay: 0;
 }
 
 #teamHeader {
@@ -257,6 +263,43 @@ footer {
     
 }
     
+@keyframes navLoad {
+    0% {
+        width: 0em;
+    }
+
+    15% {
+        width: 2.5em;
+    }
+
+    30% {
+        width: 5em;
+    }
+
+    45% {
+        width: 7em;
+    }
+
+    60% {
+        width: 9.5em;
+    }
+
+    75% {
+        width: 12em;
+    }
+
+    90% {
+        width: 15em;
+    }
+
+    100% {
+        width: 18em;
+    }
+
+
+
+}
+
 @keyframes fly-cycle {
 	
 	100% {
