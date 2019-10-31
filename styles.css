@@ -1,29 +1,24 @@
 body {
     margin: 0 auto;
     position: relative;
-    /* width: 750px; */
-}
-nav {
-    /* width: 100%; */
-    display: flex;
-    justify-content: space-around;
-    z-index: 10;
-    margin: 0;
-   
+    background:rgb(188, 215, 255);
     
 }
-.homeHeader {
+/* header {
+    width: 18em;
+} */
+#homeHeader {
     padding: .5em .5em;
     display: flex;
     background: rgba(17, 22, 88,.6);
-    width: 18em;
+    width: 26em;
 }
 
-.teamHeader {
+#teamHeader {
     padding: .5em .5em;
     display: flex;
     background: rgba(17, 22, 88,.6);
-    width: 18em;
+    width: 26em;
     
 }
 
@@ -41,7 +36,7 @@ a:hover {
 a {
     border: 1px solid black;
     border-radius: 50px;
-    padding: 5px;
+    padding: 2.5em 1em .5em 1em;
     color: white;
     text-decoration: none;
     transition: transform 1s;
@@ -84,7 +79,7 @@ a {
     background: rgb(216, 226, 241);
     z-index: 1;
     opacity: .7;
-    padding: .5em;
+    padding: .25em;
     margin: 0 auto;
     width: fit-content;
     position: absolute;
@@ -95,12 +90,14 @@ a {
 
 }
 
- #windbladeVideo {
-
+#windbladeVideo {
+    width: 100vw;
+    height: 100vh;
     display: block;
 }
 #sunriseVideo {
-
+    width: 100vw;
+    height: 100vh;
     display: block;
 }
     
@@ -110,8 +107,6 @@ a {
     position: absolute;
     z-index: -10;
     margin: auto;
-    width: 100vw;
-    height: 100vh;
 }
 
 
@@ -140,7 +135,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    padding: 0;
+    padding-top: 4em;
     width: 100%;
     justify-content: space-evenly;
 }
