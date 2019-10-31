@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     background: rgba(17, 22, 88,.6);
     width: 26em;
-
+    border-radius: 30px;
     animation-name: navLoad;
 	animation-timing-function: ease-in;
 	animation-iteration-count: 1;
@@ -118,16 +118,30 @@ a {
     position: relative;
 }   
 
+.welcomeStatement {
+    position: relative;
+    font-size: 2em;
+    z-index: 2;
+    background: rgba(7, 21, 41, 0.8);
+    padding: 2em .5em;
+    color: white;
+    box-shadow: -5px 8px 5px black;
+    text-align: center;
+}
 
 .content-boxes {
     position: relative;
     z-index: 2;
-    margin: 0 auto;
+    margin: 1em;
     background: rgba(7, 21, 41, 0.8);
     padding: 25px 20px;
     color: white;
     box-shadow: -5px 8px 5px black;
     
+}
+
+.content-boxes ul {
+    font-size: 2em;
 }
 
 .sustainable-tips {
@@ -142,7 +156,7 @@ a {
 
 .box-container {
     display: flex;
-    width: 70%;
+    width: 90%;
     height: fit-content;
     margin: auto;
     position: relative;
@@ -232,8 +246,7 @@ footer {
     color: black;
     font-size: 20px;
     left: 50%;
-    bottom: 5%;
-    margin-top: 30%;
+    margin-top: 10%;
     
 }
 
