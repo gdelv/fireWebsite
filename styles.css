@@ -24,7 +24,12 @@ body {
     display: flex;
     background: rgba(17, 22, 88,.6);
     width: 26em;
-    
+    border-radius: 30px;
+    animation-name: navLoad;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-duration: 1s;
+	animation-delay: 0;
 }
 
 
@@ -113,8 +118,9 @@ a {
     z-index: -10;
 }
 .welcome {
-    font-size: 10em;
-    left: 10%;  
+    font-size: 6em;
+    left: 10%; 
+    color: white; 
     position: relative;
 }   
 
@@ -243,7 +249,7 @@ ol {
 }
 footer {
     position: relative;
-    color: black;
+    color: white;
     font-size: 20px;
     left: 50%;
     margin-top: 10%;
@@ -251,26 +257,50 @@ footer {
 }
 
 /* media */
-@media(max-width: 700px) {
+@media(max-width: 800px) {
+
+    /* body {
+        width: px;
+    } */
+    a {
+        padding: 1.5em 1em .5em 1em;
+    }
+
+    #windBladeVideo {
+        width: 375px;
+        height: 100vh;
+    }
+
+    
+    .box-container {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .picture-container {
+        width: 40%;
+    }
+
+    .sustainable-tips {
+        margin: 4%;
+    }
     .title {
         font-size: 2rem;
-        position: absolute;
-        top: 24%;
-        left: 50%;
+        position: relative;
+        left: 17%;
+        
     }
-    
+    /*
     .box-container {
         display: flex;
         flex-direction: column;
     }
-
+    */
     nav {
-        position: fixed;
+        position: relative;
         display: flex;
-        top: 10%;
-        left: 50%;
         z-index: 2;
-    }
+    } 
 }
 
 
