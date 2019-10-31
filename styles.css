@@ -131,18 +131,19 @@ a {
     z-index: 2;
     margin: 0 auto;
     background: rgba(7, 21, 41, 0.8);
-    padding: 25px 20px;
+    padding: 1em 2em;
     color: white;
     box-shadow: -5px 8px 5px black; 
 }
 
 .box-container {
     display: flex;
-    width: 90%;
-    margin: auto 0;
+    width: 70%;
+    height: 800px;
+    margin: auto;
     position: relative;
     padding-top: 10%;
-    left: 5%;
+    
     flex-direction: column;
     z-index: 1;
     justify-content: space-between;
@@ -184,9 +185,35 @@ a {
     left: 45%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    z-index: 1;  
+    text-align: center;
+    /* z-index: 1;   */
 }
 
+.overlay {
+    position: absolute;
+    display: block;
+    bottom: 3em;
+    left: 8em;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 45%;
+    height:12em;
+    z-index: 0;
+    opacity: 1;
+  }
+
+
+.content-boxes p {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+ol {
+    font-size: 2em;
+}
 footer {
     position: relative;
     color: black;
