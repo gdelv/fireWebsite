@@ -89,11 +89,28 @@ a {
 
 
 }
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
 
-#windbladeVideo {
-    width: 100vw;
-    height: 100vh;
-    display: block;
+#windBladeVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
 }
 #sunriseVideo {
     width: 100vw;
@@ -148,14 +165,13 @@ a {
     z-index: 2;
   }
   
-  .avatarImage {
+.avatarImage {
     display: block;
     width: 12em;
     z-index: 4;
-  }
+}
   
-  
-  .overlay {
+.overlay {
     display: block;
     position: absolute;
     bottom: 3em;
@@ -164,9 +180,20 @@ a {
     z-index: 0;
     background-color: #008CBA;
     opacity: 1;
-  }
-  
-  .text {
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px;
+}
+
+#more {display: none;}
+#more1 {display: none;}  
+.text {
     color: white;
     font-size: 15px;
     position: absolute;
@@ -176,8 +203,8 @@ a {
     left: 45%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    z-index: 1;
-  }
+    z-index: 1;  
+}
 
 footer {
     position: absolute;
