@@ -112,7 +112,11 @@ a {
     min-height: 100%;
     z-index: -10;
 }
-    
+.welcome {
+    font-size: 10em;
+    left: 10%;  
+    position: relative;
+}   
 
 
 .content-boxes {
@@ -139,7 +143,7 @@ a {
 .box-container {
     display: flex;
     width: 70%;
-    height: 800px;
+    height: fit-content;
     margin: auto;
     position: relative;
     padding-top: 10%;
