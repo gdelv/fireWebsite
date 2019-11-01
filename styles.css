@@ -313,6 +313,10 @@ footer {
         display: flex;
         z-index: 2;
     } 
+
+    .bird-container {
+        display: none;
+    }
 }
 
 
