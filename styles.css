@@ -259,15 +259,16 @@ footer {
 /* media */
 @media(max-width: 800px) {
 
-    /* body {
-        width: px;
-    } */
     a {
         padding: 1.5em 1em .5em 1em;
     }
 
     #windBladeVideo {
-        width: 375px;
+        
+        height: 100vh;
+    }
+
+    #sunriseVideo {
         height: 100vh;
     }
 
@@ -287,15 +288,26 @@ footer {
     .title {
         font-size: 2rem;
         position: relative;
-        left: 17%;
+        left: 20%;
         
     }
-    /*
-    .box-container {
-        display: flex;
-        flex-direction: column;
+    #homeHeader {
+        position: relative;
+        left: .5em;
+
     }
-    */
+    
+    .welcomeStatement {
+        position: relative; 
+        left: 1.5em;
+
+    }
+    
+    .box-container {
+        position: relative;
+        left: 2.5em;
+    }
+   
     nav {
         position: relative;
         display: flex;
